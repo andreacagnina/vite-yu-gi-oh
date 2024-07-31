@@ -1,11 +1,14 @@
 <script>
 import AppCard from './AppCard.vue';
+import ResultMessage from './ResultMessage.vue';
 import { store } from '../store.js';
+
 
 
 export default {
     components: {
         AppCard,
+        ResultMessage
     },
     data() {
         return {
@@ -35,7 +38,7 @@ export default {
                     <div class="content bg-light p-4">
                         <div class="col-12">
                             <div class="content bg-dark p-3">
-                                <h5 class="text-light">Founds {{store.CardsArray.length}} cards</h5>
+                                <ResultMessage/>
                             </div>
                         </div>
                         <div class="col-12">
@@ -56,7 +59,5 @@ export default {
     background-color: #d48f38;
 }
 
-h5 {
-    margin: 0;
-}
+
 </style>
