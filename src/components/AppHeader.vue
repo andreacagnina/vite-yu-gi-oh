@@ -12,9 +12,7 @@ export default {
             <div class="row">
                 <div class="col-12">
                     <div class="content d-flex align-items-center">
-                        <div>
-                            <img src="" alt="logo">
-                        </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Yu-Gi-Oh%21_%28Logo%29.jpg" alt="logo">
                         <div>
                             <h1>Yu-Gi-Oh Api</h1>
                         </div>
@@ -26,4 +24,10 @@ export default {
 
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+img {
+    width: 20%;
+}
+
+
+    </style>
