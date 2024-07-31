@@ -1,6 +1,8 @@
 <script>
 export default {
-
+    props: {
+        card: Object
+    }
 }
 </script>
 
@@ -14,4 +16,9 @@ export default {
     </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+h4 {
+    text-transform: uppercase;
+    color: white;
+}
+</style>

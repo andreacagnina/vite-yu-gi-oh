@@ -1,6 +1,11 @@
 <script>
-import { store } from '../store.js'
+import { store } from '../store.js';
+import AppCard from './AppCard.vue';
+
 export default {
+    components: {
+        AppCard,
+    }
     data() {
         return {
             store,
@@ -33,7 +38,7 @@ export default {
                     </div>
                     <div class="col-12">
                         <div class="content d-flex">
-
+                            <AppCard />
                             <!-- {{ store.ect }} -->
                         </div>
                     </div>
@@ -51,10 +56,5 @@ export default {
 
 h5 {
     margin: 0;
-}
-
-h4 {
-    text-transform: uppercase;
-    color: white;
 }
 </style>
