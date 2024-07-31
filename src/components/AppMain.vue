@@ -1,11 +1,22 @@
 <script>
-import { store } from '../store.js';
 import AppCard from './AppCard.vue';
+import { store } from '../store.js';
+import axios from 'axios';
 
 export default {
     components: {
         AppCard,
-    }
+    },
+    created() {
+        this.getCard()
+    },
+    methods: {
+        getCard() {
+            axios.get(store.apiUrl).then((result) => {
+                store.CardsArray = result.data.data
+            });
+        }
+    },
     data() {
         return {
             store,
@@ -39,7 +50,6 @@ export default {
                     <div class="col-12">
                         <div class="content d-flex">
                             <AppCard />
-                            <!-- {{ store.ect }} -->
                         </div>
                     </div>
                 </div>
