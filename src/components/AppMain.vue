@@ -1,61 +1,52 @@
 <script>
 import AppCard from './AppCard.vue';
-import { store } from '../store.js';
-import axios from 'axios';
+
 
 export default {
     components: {
         AppCard,
     },
-    created() {
-        this.getCard()
-    },
-    methods: {
-        getCard() {
-            axios.get(store.apiUrl).then((result) => {
-                store.CardsArray = result.data.data
-            });
-        }
-    },
     data() {
         return {
-            store,
+
         }
     }
 }
 </script>
 
 <template>
-    <div class="container bg-ocre px-5">
-        <div class="row">
-            <div class="col-12">
-                <div class="content py-4 px-2">
-                    <select class="form-select form-select-sm">
-                        <option selected>Select a race</option>
-                        <option value="1">Alien</option>
-                        <option value="2">ND</option>
-                        <option value="3">ND</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="content bg-light p-4">
-                    <div class="col-12">
-                        <div class="content bg-dark p-3">
-                            <h5 class="text-light">Found text</h5>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="content d-flex">
-                            <AppCard />
-                        </div>
+    <main>
+        <div class="container bg-ocre px-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="content py-4 px-2">
+                        <select class="form-select form-select-sm">
+                            <option selected>Select a race</option>
+                            <option value="1">Alien</option>
+                            <option value="2">ND</option>
+                            <option value="3">ND</option>
+                        </select>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="content bg-light p-4">
+                        <div class="col-12">
+                            <div class="content bg-dark p-3">
+                                <h5 class="text-light">Found text</h5>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="content d-flex">
+                                <AppCard />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
 
 </template>
 
