@@ -35,7 +35,7 @@ export default {
                     <div class="content bg-light p-4">
                         <div class="col-12">
                             <div class="content bg-dark p-3">
-                                <h5 class="text-light">Found text</h5>
+                                <h5 class="text-light">Founds {{store.CardsArray.length}} cards</h5>
                             </div>
                         </div>
                         <div class="col-12">
