@@ -15,6 +15,6 @@ export default {
   <AppMain />
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use './styles/generals.scss';
 </style>
