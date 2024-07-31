@@ -1,6 +1,6 @@
 <script>
 import AppCard from './AppCard.vue';
-import { store } from '../store.js'
+import { store } from '../store.js';
 
 
 export default {
@@ -9,7 +9,7 @@ export default {
     },
     data() {
         return {
-            store
+            store,
         }
     }
 }
@@ -39,10 +39,8 @@ export default {
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="content d-flex" v-for="card in store.CardsArray">
-                                {{ card.name }}
-
-                                <!-- <AppCard /> -->
+                            <div class="row row-cols-5">
+                                <AppCard />
                             </div>
                         </div>
                     </div>
