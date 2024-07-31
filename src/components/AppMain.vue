@@ -1,16 +1,19 @@
 <script>
+import { store } from '../store.js'
 export default {
     data() {
-
+        return {
+            store,
+        }
     }
 }
 </script>
 
 <template>
-    <div class="container bg-ocre p-5">
+    <div class="container bg-ocre px-5">
         <div class="row">
             <div class="col-12">
-                <div class="content p-2">
+                <div class="content py-4 px-2">
                     <select class="form-select form-select-sm">
                         <option selected>Select a race</option>
                         <option value="1">Alien</option>
@@ -29,8 +32,9 @@ export default {
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="content">
-                            1
+                        <div class="content d-flex">
+
+                            <!-- {{ store.ect }} -->
                         </div>
                     </div>
                 </div>
@@ -43,5 +47,14 @@ export default {
 <style lang="scss" scoped>
 .bg-ocre {
     background-color: #d48f38;
+}
+
+h5 {
+    margin: 0;
+}
+
+h4 {
+    text-transform: uppercase;
+    color: white;
 }
 </style>
