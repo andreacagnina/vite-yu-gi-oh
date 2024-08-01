@@ -15,10 +15,10 @@ export default {
 }
 </script>
 <template>
-<h5 class="text-light" >Founds {{store.CardsArray.length}} cards</h5>
+<h5 class="text-light">Founds {{store.CardsArray.length}} cards</h5>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 h5 {
     margin: 0;
 }
