@@ -11,7 +11,7 @@ card: Object
         <div class="content border text-center bg-ocre h-100">
             <img :src="card.card_images[0].image_url_small" alt="">
             <h6 class="mt-2 text-bold">{{ card.name }}</h6>
-            <p>{{ card.race }}</p>
+            <p>{{ card.archetype }}</p>
         </div>
     </div>
 
