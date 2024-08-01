@@ -33,7 +33,7 @@ export default {
                         </div>
                         <div class="col-12">
                             <div class="row row-cols-5">
-                                <AppCard />
+                                <AppCard v-for="card in store.CardsArray" :key="card.id" :card="card"/>
                             </div>
                         </div>
                     </div>
