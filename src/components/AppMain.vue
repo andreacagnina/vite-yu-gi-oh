@@ -21,9 +21,18 @@ export default {
     },
     methods:{
         getCardFiltered() {
-            if (){
+
+        }
+    },
+    computed: {
+        filteredCard() {
+            if (store.archetypesList){
+            let FCard = store.CardsArray.archetype.contains(store.archetypesList)
+                console.log(FCard)
                 
-            }
+                return FCard;
+            };
+            return store.CardsArray;
         }
     }
 }
@@ -43,7 +52,7 @@ export default {
                         </div>
                         <div class="col-12">
                             <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
-                                <AppCard v-for="card in store.CardsArray" :key="card.id" :card="card"/>
+                                <AppCard v-for="card in filteredCard" :key="card.id" :card="card"/>
                             </div>
                         </div>
                     </div>
