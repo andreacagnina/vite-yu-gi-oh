@@ -13,11 +13,10 @@ export default {
     <div class="row">
         <div class="col-12">
             <div class="content py-4 px-2">
-                <select class="form-select form-select-sm">
+                <select class="form-select form-select-sm" v-model="store.archetypesList">
                     <option selected>Select a race</option>
-                    <option value="1">Alien</option>
-                    <option value="2">ND</option>
-                    <option value="3">ND</option>
+                    <option value="{{index}}" v-for="(archetype, index) in store.ArchetypesArray">{{archetype.archetype_name}}</option>
+
                 </select>
             </div>
         </div>

@@ -10,12 +10,18 @@ export default {
     AppMain,
   },
   created() {
-    this.getCard()
+    this.getCard(),
+    this.getArchetype()
   },
   methods: {
     getCard() {
       axios.get(store.apiUrl).then((result) => {
         store.CardsArray = result.data.data
+      });
+    },
+      getArchetype(){
+        axios.get(store.apiArchetypesUrl).then((result) => {
+        store.ArchetypesArray = result.data
       });
     }
   },
