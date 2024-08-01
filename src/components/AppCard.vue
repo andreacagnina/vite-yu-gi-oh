@@ -25,6 +25,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/_partials/_bgColor' as *;
 h6 {
     text-transform: uppercase;
     color: white;
@@ -32,7 +33,7 @@ h6 {
 }
 
 .bg-ocre {
-    background-color: #d48f38;
+    background-color: $bg_color;
 }
 
 img {

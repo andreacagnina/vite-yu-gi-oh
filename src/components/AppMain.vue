@@ -45,8 +45,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/_partials/_bgColor' as *;
 .bg-ocre {
-    background-color: #d48f38;
+    background-color: $bg_color;
 }
 
 
