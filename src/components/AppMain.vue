@@ -22,7 +22,7 @@ export default {
 <template>
     <main>
         <div class="container bg-ocre px-5">
-            <SearchBar/>
+            <SearchBar @filter="getCard()"/>
             <div class="row">
                 <div class="col-12">
                     <div class="content bg-light p-4">

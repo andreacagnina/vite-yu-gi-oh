@@ -5,6 +5,11 @@ export default {
         return {
             store,
         }
+    },
+    methods:{
+        sendArchetype(){
+            this.$emit('filter');
+        }
     }
 }
 </script>
@@ -13,10 +18,9 @@ export default {
     <div class="row">
         <div class="col-12">
             <div class="content py-4 px-2">
-                <select class="form-select form-select-sm" v-model="store.archetypesList">
+                <select class="form-select form-select-sm" v-model="store.archetypesList" @change="sendArchetype()">
                     <option selected>Select a race</option>
-                    <option value="{{index}}" v-for="(archetype, index) in store.ArchetypesArray">{{archetype.archetype_name}}</option>
-
+                    <option v-for="(archetype, index) in store.ArchetypesArray" :key="index" :value="archetype.archetype_name">{{archetype.archetype_name}}</option>
                 </select>
             </div>
         </div>
