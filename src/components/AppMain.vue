@@ -15,6 +15,16 @@ export default {
         return {
             store,
         }
+    },
+    created(){
+
+    },
+    methods:{
+        getCardFiltered() {
+            if (){
+                
+            }
+        }
     }
 }
 </script>
@@ -22,7 +32,7 @@ export default {
 <template>
     <main>
         <div class="container bg-ocre px-5">
-            <SearchBar @filter="getCard()"/>
+            <SearchBar @filter="getCardFiltered()"/>
             <div class="row">
                 <div class="col-12">
                     <div class="content bg-light p-4">
