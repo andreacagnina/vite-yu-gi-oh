@@ -1,13 +1,14 @@
 <script>
 import AppCard from './AppCard.vue';
+import SearchBar from './SearchBar.vue';
 import ResultMessage from './ResultMessage.vue';
 import { store } from '../store.js';
-
 
 
 export default {
     components: {
         AppCard,
+        SearchBar,
         ResultMessage
     },
     data() {
@@ -21,18 +22,7 @@ export default {
 <template>
     <main>
         <div class="container bg-ocre px-5">
-            <div class="row">
-                <div class="col-12">
-                    <div class="content py-4 px-2">
-                        <select class="form-select form-select-sm">
-                            <option selected>Select a race</option>
-                            <option value="1">Alien</option>
-                            <option value="2">ND</option>
-                            <option value="3">ND</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+            <SearchBar/>
             <div class="row">
                 <div class="col-12">
                     <div class="content bg-light p-4">
