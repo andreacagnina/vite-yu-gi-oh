@@ -19,9 +19,7 @@ export default {
 
     },
     methods:{
-        getCardFiltered() {
 
-        }
     },
     computed: {
         filteredCard() {
@@ -30,7 +28,6 @@ export default {
                     return elem.archetype == store.archetypesList
                 })
             };
-            store.Lunghezza = store.CardsArray.length
             return store.CardsArray;
         }
     }
@@ -41,7 +38,7 @@ export default {
     <main>
 
         <div class="container border_ocre">
-            <SearchBar @filter="getCardFiltered()"/>
+            <SearchBar @filter="filteredCard()"/>
             <div class="row">
                 <div class="col-12">
                     <div class="content ">

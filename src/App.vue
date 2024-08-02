@@ -21,7 +21,9 @@ export default {
     },
       getArchetype(){
         axios.get(store.apiArchetypesUrl).then((result) => {
+          // for(let i=0; i<10;<i++){store.ArchetypesArray.push(result.data[i]);}
         store.ArchetypesArray = result.data
+          
       });
     }
   },
