@@ -7,3 +7,10 @@ e con i dati restituiti, stampate una card per ogni carta.*ATTENZIONE*: l’api 
 Creare un componente loader da visualizzare fintantoché i risultati non sono pronti.
 
 *Documentazione*: https://ygoprodeck.com/api-guide/
+
+*Descrizione:*
+Continuate a lavorare nella stessa repo di ieri e aggiungete una select per filtrare i risultati in base all’archetipo.Le option della select devono essere popolate dinamicamente chiamando questo endpoint dell'api:https://db.ygoprodeck.com/api/v7/archetypes.phpQuando l'utente seleziona un valore dalla lista, viene effettuata una chiamata alle API con l'archetipo selezionato
+
+*Bonus:*Creare un componente che mostri il numero totale di risultati ottenuti.
+
+*Nota*:Per capire come comunicare alle API le carte dell'archetipo che volete, è necessario fare riferimento alla documentazione che trovate qui:https://ygoprodeck.com/api-guide/
